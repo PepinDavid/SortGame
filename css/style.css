@@ -1,0 +1,83 @@
+canvas{
+    border: 1px solid black;
+}
+/*
+body{
+    position: fixed;
+    overflow-x: scroll;
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%
+}*/
+
+.inventaire{
+    border: 2px solid green;
+    font-size: 22px;
+    position:absolute;
+    z-index: 10px;
+    background-color: white;
+    display: inline;
+}
+#btnInventaire{
+    float: left
+}
+#btnNotice{
+    float: left;
+}
+#btnMap{
+    float: left;
+}
+.gameOver{
+    background-color: white; 
+    position: absolute; 
+    align-text: center; 
+    margin: auto
+    
+}
+.divMap{
+    border: 2px solid green;
+    position:fixed;
+    top: 25px;
+    z-index: 10px;
+    background-color: white;
+    margin-top: 20px;
+}
+.notice{
+    border: 2px solid red;
+    font-size: 22px;
+    position:absolute;
+    z-index: 10px;
+    background-color: white;
+    display: inline;
+    font-size: 16px
+}
+.contains{
+    max-height: 250px;
+    height: 250px;
+    width: 250px;
+    overflow-y: auto;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.click{
+    text-align: left;
+    cursor: pointer;
+}
+.invisible{
+    display: none;
+}
+#ctn{
+    position: relative;
+}
+.dialog{
+    position: absolute;
+    left: 5px;
+    right: 20px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

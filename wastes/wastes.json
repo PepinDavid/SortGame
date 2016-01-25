@@ -1,0 +1,71 @@
+{
+    poubelle: [
+        {
+            url: "bacvert.png",
+            x: 25,
+            y: 25,
+            nom: "vert",
+            type: 'vert',
+            drop: 'false'
+        },
+        {
+            url: "bacbleu.png",
+            x: 25,
+            y: 26,
+            nom: "bleu",
+            type: 'bleu',
+            drop: 'false'
+        },
+        {
+            url: "poub.png",
+            x: 25,
+            y: 27,
+            nom: "ordure",
+            type: 'ordure',
+            drop: 'false'
+        },
+        {
+            url: "compost.png",
+            x: 25,
+            y: 28,
+            nom: "compost",
+            type: 'compost',
+            drop: 'false'
+        }
+               ],
+    dechets: [
+        {
+            url: "water.png",
+            x: 7,
+            y: 7,
+            nom: "bouteille d'eau en plastique",
+            type: 'bleu',
+            drop: true
+        },
+        {
+            url: "carton.png",
+            x: 0,
+            y: 1,
+            nom: "carton",
+            type: 'bleu',
+            drop: 'true'
+        },
+        {
+            url: "oil.png",
+            x: 14,
+            y: 14,
+            nom: "bidon d'huile",
+            type: 'dechetterie',
+            drop: 'true'
+        },
+        {
+            url: "champ.png",
+            x: 8,
+            y: 12,
+            nom: "bouteille en verre",
+            type: 'vert',
+            drop: "true"
+        }
+    ]
+
+}

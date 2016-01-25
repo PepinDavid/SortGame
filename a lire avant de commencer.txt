@@ -1,0 +1,6 @@
+la camera ne suit pas le joueur.
+
+la camera change d'angle de vue lorsque le joueur est sur les
+bords de l'angle de vue.
+
+Concept plus approprié pour le jeu RPG
