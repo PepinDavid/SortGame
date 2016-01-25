@@ -1,11 +1,10 @@
-/*jslint sloppy: true*/
+/*Game created by PEPIN David*/
 (function () { //option du jeu
 
     var FPS = 30;
     var INTERVAL = 1000 / FPS;
     var STEP = INTERVAL / 1000 // seconds
 
-    var item; //me sert a la selection dans canvasInventaire
     var isRunning = -1;
     var gameOver = false;
 
