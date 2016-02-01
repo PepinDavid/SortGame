@@ -8,6 +8,7 @@
     <!--        <script src="https://raw.githubusercontent.com/douglascrockford/JSON-js/master/json2.js"></script>-->
     <!--[if It IE 8]><script text="text/javascript" src="js/excanvas.js"></script><![endif]-->
     <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="js/classes/tileset.js"></script>
     <script src="js/classes/map.js"></script>
     <script src="js/classes/perso.js"></script>
@@ -47,9 +48,12 @@
             <div>Le but du jeu, réussir un tri des déchets sans mauvaises erreurs</div>
             <hr>
         </div>
-    </div>
-    <div id="divMap" class="divMap invisible">
-        <canvas id="map" height="400" width="500"></canvas>
+        <div id="divMap" class="divMap invisible">
+            <canvas id="map" height="400" width="500"></canvas>
+        </div>
+        <div id="divItem" class="invisible back-white">
+            <img id="imgItem" height="32" width="32">
+        </div>
     </div>
     <div class="gameOver invisible">
         <div id="score" style="align-text: center">score</div>

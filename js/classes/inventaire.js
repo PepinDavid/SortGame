@@ -44,7 +44,7 @@ function Inventaire(canvas){
             }
         };
     }
-    this.addObj = function (obj){//pour html
+    this.addObj = function (obj){
         if(obj){
             this.wastes.push(obj);
             div = $('<div>');
@@ -53,7 +53,6 @@ function Inventaire(canvas){
             div.attr('data-url', obj.url);
             div.attr('data-drop', obj.drop);
             div.attr('data-type', obj.type);
-//            div.attr('style','float:left');
             img = $('<img>')
             img.attr('src', obj.image.src);
             img.attr('height', obj.h);
@@ -65,7 +64,7 @@ function Inventaire(canvas){
             $('#container').append(div);
         }
     }
-    this.dropObj = function(obj){//pour html
+    this.dropObj = function(obj){
         var pos;
         for(var i=0; i<this.wastes.length; i++){
             if(this.wastes[i].nom = obj.nom){

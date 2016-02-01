@@ -662,6 +662,9 @@
             $('div.click').removeClass('selected');
             $(this).attr('style', 'border: 4px solid black');
             $(this).addClass('selected');
+            $("#divItem").removeClass('invisible');
+            $("#imgItem").attr('src','wastes/'+$(this).attr('data-url'));
+            $("#nameItem").html($(this).attr('data-nom'));
             joueur.item = {
                 nom: $(this).attr('data-nom'),
                 type: $(this).attr('data-type'),
@@ -672,10 +675,14 @@
         } else {
             $(this).removeAttr('style');
             $(this).removeClass('selected');
+            $("#divItem").addClass('invisible');
             joueur.item = null;
             return
         }
     });
+    $('body').on('mousedown', 'div#divItem', function(){
+        $(this).draggable();
+    })
     $('#btnInventaire').click(function (e) {
         if ($('#inventaire').hasClass('invisible')) {
             $('#inventaire').removeClass('invisible')
@@ -703,20 +710,20 @@
         $('#inventaire').addClass('invisible')
         $('#notice').addClass('invisible')
     });
-    function BoxDial(obj) {
-        AffichBoxDial(obj)
-        div = $('#dialog');
-        div.html(obj.tirade);
-        div.attr('style', 'bottom : ' + (-canvas.height) + 'px')
-    };
-    function AffichBoxDial(obj) {
-        div = $('#dialog');
-        if (obj.isDial) {
-            div.removeClass('invisible')
-        } else {
-            div.addClass('invisible')
-        }
-    };
+//    function BoxDial(obj) {
+//        AffichBoxDial(obj)
+//        div = $('#dialog');
+//        div.html(obj.tirade);
+//        div.attr('style', 'bottom : ' + (-canvas.height) + 'px')
+//    };
+//    function AffichBoxDial(obj) {
+//        div = $('#dialog');
+//        if (obj.isDial) {
+//            div.removeClass('invisible')
+//        } else {
+//            div.addClass('invisible')
+//        }
+//    };
     (window.onresize = function () {
         canvas.height = window.innerHeight - 50;
         canvas.width = window.innerWidth - 30;

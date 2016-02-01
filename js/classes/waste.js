@@ -12,7 +12,7 @@ function Waste (url, x, y, nom){
         this.refObs.hauteur = this.height; //this.hauteur
     }
 
-    this.image.src = "http://localhost/jeubis/wastes/" + url;
+    this.image.src = "wastes/" + url;
 }
 
 Waste.prototype.dessinerWaste = function(context, xView, yView){
