@@ -543,9 +543,12 @@
                 } else if (!reponse.rep && reponse.x) {
                     map.alltabs.Items.push(new Item(joueur.item.url, reponse.x, reponse.y, joueur.item.nom, joueur.item.type, joueur.item.drop))
                     joueur.inventaire.dropObj(joueur.item);
+                }else if(!reponse.rep){
+                    joueur.inventaire.dropObj(joueur.item);
                 }
                 $('div.click').removeAttr('style');
                 $('div.click').removeClass('selected');
+                $("#divItem").addClass('invisible');
                 joueur.item = null;
             }
             if (joueur.VerifDialogPNG(map.alltabs.PNG) >= 0) {
