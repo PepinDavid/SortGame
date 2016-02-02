@@ -618,6 +618,7 @@
         }
         MoveMobile(Coords)
     });
+
     function MoveMobile(c) {
         if (c.ClientX >= canvas.offsetLeft && c.ClientX <= canvas.width && c.ClientY >= canvas.offsetTop && c.ClientY <= (canvas.offsetTop + 200)) {
             joueur.deplacer(DIRECTION.HAUT, map.alltabs)
@@ -663,8 +664,8 @@
             $(this).attr('style', 'border: 4px solid black');
             $(this).addClass('selected');
             $("#divItem").removeClass('invisible');
-            $("#imgItem").attr('src','wastes/'+$(this).attr('data-url'));
-            $("#nameItem").html($(this).attr('data-nom'));
+            $("#imgItem").attr('src', 'wastes/' + $(this).attr('data-url'));
+            $("#nameItem").html($(this).attr('data-nom') + ' : ');
             joueur.item = {
                 nom: $(this).attr('data-nom'),
                 type: $(this).attr('data-type'),
@@ -680,7 +681,7 @@
             return
         }
     });
-    $('body').on('mousedown', 'div#divItem', function(){
+    $('body').on('mousedown', 'div#divItem', function () {
         $(this).draggable();
     })
     $('#btnInventaire').click(function (e) {
@@ -710,20 +711,20 @@
         $('#inventaire').addClass('invisible')
         $('#notice').addClass('invisible')
     });
-//    function BoxDial(obj) {
-//        AffichBoxDial(obj)
-//        div = $('#dialog');
-//        div.html(obj.tirade);
-//        div.attr('style', 'bottom : ' + (-canvas.height) + 'px')
-//    };
-//    function AffichBoxDial(obj) {
-//        div = $('#dialog');
-//        if (obj.isDial) {
-//            div.removeClass('invisible')
-//        } else {
-//            div.addClass('invisible')
-//        }
-//    };
+    //    function BoxDial(obj) {
+    //        AffichBoxDial(obj)
+    //        div = $('#dialog');
+    //        div.html(obj.tirade);
+    //        div.attr('style', 'bottom : ' + (-canvas.height) + 'px')
+    //    };
+    //    function AffichBoxDial(obj) {
+    //        div = $('#dialog');
+    //        if (obj.isDial) {
+    //            div.removeClass('invisible')
+    //        } else {
+    //            div.addClass('invisible')
+    //        }
+    //    };
     (window.onresize = function () {
         canvas.height = window.innerHeight - 50;
         canvas.width = window.innerWidth - 30;
