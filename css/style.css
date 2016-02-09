@@ -1,6 +1,8 @@
-canvas{
+canvas {
     border: 1px solid black;
 }
+
+
 /*
 body{
     position: fixed;
@@ -10,31 +12,35 @@ body{
     width: 100%
 }*/
 
-.inventaire{
+.inventaire {
     border: 2px solid green;
     font-size: 22px;
-    position:absolute;
+    position: absolute;
     z-index: 10px;
     background-color: white;
     display: inline;
 }
-#btnInventaire{
+
+#btnInventaire {
     float: left
 }
-#btnNotice{
+
+#btnNotice {
     float: left;
 }
-#btnMap{
+
+#btnMap {
     float: left;
 }
-.gameOver{
-    background-color: white; 
-    position: absolute; 
-    text-align: center; 
+
+.gameOver {
+    background-color: white;
+    position: absolute;
+    text-align: center;
     margin: auto
-    
 }
-.back-white{
+
+.back-white {
     border: 4px solid black;
     background-color: white;
     padding: 0.5em;
@@ -42,23 +48,34 @@ body{
     z-index: 10px;
     top: -60px;
 }
-.divMap{
+
+.divMap {
     border: 2px solid green;
-    position:fixed;
+    position: absolute;
     display: inline;
     z-index: 10px;
     background-color: white;
 }
-.notice{
+
+.timer {
+    position: absolute;
+    display: inline;
+    border: 4px solid black;
+    background-color: white;
+    padding: 0.5em;
+}
+
+.notice {
     border: 2px solid red;
     font-size: 22px;
-    position:absolute;
+    position: absolute;
     z-index: 10px;
     background-color: white;
     display: inline;
     font-size: 16px;
 }
-.contains{
+
+.contains {
     max-height: 250px;
     height: 250px;
     width: 250px;
@@ -66,17 +83,21 @@ body{
     font-size: 16px;
     margin-bottom: 10px;
 }
-.click{
+
+.click {
     text-align: left;
     cursor: pointer;
 }
-.invisible{
+
+.invisible {
     display: none;
 }
-#ctn{
+
+#ctn {
     position: relative;
 }
-.dialog{
+
+.dialog {
     position: absolute;
     left: 5px;
     right: 20px;

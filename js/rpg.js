@@ -4,9 +4,12 @@
     var FPS = 30;
     var INTERVAL = 1000 / FPS;
     var STEP = INTERVAL / 1000 // seconds
+    var FIVEMINUTES = 300000;
 
     var isRunning = -1;
     var gameOver = false;
+    var isStart = -1;
+    var time;
 
     var Game = {};
     Game.controls = {
@@ -408,6 +411,7 @@
 
     Game.play = function () {
         if (isRunning == -1) {
+            startTimer(FIVEMINUTES);
             isRunning = setInterval(function () {
                 LoopDraw(ctx);
                 cam.update(); //mise a jour de la camera
@@ -424,6 +428,7 @@
             joueur.isDial = false;
         } else {
             clearInterval(isRunning);
+            clearInterval(isStart);
             isRunning = -1;
             joueur.isDial = true;
             joueur.tirade = "JEU EN PAUSE"
@@ -448,12 +453,11 @@
         }, 2000);
     };
     Game.GameOver = function () {
-        //    setTimeout(function(){
-        //        Game.end()
-        //        gameOver = true;
-        //        console.log('gameover')
-        //    },10000);
-        //300000 = 5min
+        setTimeout(function () {
+            Game.end()
+            gameOver = true;
+            console.log('gameover')
+        }, FIVEMINUTES);
         if (map.alltabs.Items.length <= 5 && joueur.inventaire.wastes.length == 0) {
             gameOver = true;
             if (joueur.isDial) {
@@ -473,6 +477,29 @@
             }
         }
         return cpte
+    };
+
+    function startTimer(duration) {
+        if (isStart < 0) {
+            var timer = duration /= 1000;
+        } else {
+            timer = time;
+        }
+        var minutes;
+        var seconds;
+        isStart = setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            $("#timer").css('left', canvas.width / 2)
+            $("#timer").html(minutes + " : " + seconds);
+            time = timer -= 1;
+            if (timer <= 0) {
+                 $("#timer").html("time's up");
+                return;
+            }
+        }, 1000)
     };
 
     //dessine les elements dans le canvas jeu
@@ -543,7 +570,7 @@
                 } else if (!reponse.rep && reponse.x) {
                     map.alltabs.Items.push(new Item(joueur.item.url, reponse.x, reponse.y, joueur.item.nom, joueur.item.type, joueur.item.drop))
                     joueur.inventaire.dropObj(joueur.item);
-                }else if(!reponse.rep){
+                } else if (!reponse.rep) {
                     joueur.inventaire.dropObj(joueur.item);
                 }
                 $('div.click').removeAttr('style');
@@ -739,6 +766,7 @@
         cam.hView = canvas.height;
         cam.update();
     })();
+
     window.onload = function () {
         Game.load();
         Game.play();
