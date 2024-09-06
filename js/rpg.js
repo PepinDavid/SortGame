@@ -585,7 +585,7 @@
         case 69: //E key
             if (!joueur.item) { //en HTML
                 joueur.getAction(ACTION.ATTRAPER, map.alltabs);
-                joueur.inventaire.addObj(joueur.item);
+                joueur.inventaire.addObjectInDOM(joueur.item);
                 map.retirerItemMap(joueur.item);
                 joueur.item = null;
             } else {
@@ -665,7 +665,7 @@
         if (c.ClientX > (canvas.offsetLeft + 200) && c.ClientX < (canvas.width - 200) && c.ClientY > (canvas.offsetTop + 200) && c.ClientY < (canvas.height - 200)) {
             if (!joueur.item) { //en HTML
                 joueur.getAction(ACTION.ATTRAPER, map.alltabs);
-                joueur.inventaire.addObj(joueur.item);
+                joueur.inventaire.addObjectInDOM(joueur.item);
                 map.retirerItemMap(joueur.item);
                 joueur.item = null;
             } else {

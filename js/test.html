@@ -9,7 +9,11 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript">
 	$(function(){
-		var t = $('#id'),fps = $('#fps'),i=0,time = (new Date()).getTime(), animate = function(){
+		let t = $('#id');
+		let fps = $('#fps');
+		let i = 0;
+		let time = (new Date()).getTime();
+		let animate = function() {
 			ne = (new Date()).getTime();
 			dif = parseInt(1000/(ne - time));
 			time = ne;

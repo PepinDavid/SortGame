@@ -18,7 +18,7 @@ Player.prototype.deplacer = function (direction, map, step) {
     for (i = 0; i < map.alltabs.Items.length; i++) {
         if (map.alltabs.Items[i].drop && this.VerifDrop(map.alltabs.Items[i])) {
             this.CheckDrop(map.alltabs.Items[i]);
-            this.inventaire.addObj(map.alltabs.Items[i])
+            this.inventaire.addObjectInDOM(map.alltabs.Items[i])
             map.retirerItemMap(map.alltabs.Items[i])
         }
     }
@@ -32,7 +32,7 @@ Player.prototype.getAction = function (action, arrObj) {
         for (i = 0; i < o.length; i++) {
             if (o[i].drop && this.VerifDrop(o[i])) {
                 this.item = o[i];
-                this.inventaire.addObj(o[i]);
+                this.inventaire.addObjectInDOM(o[i]);
             } else if (!o[i].drop && this.VerifDrop(o[i])) {
                 this.isDial = true;
                 this.tirade = 'Vous ne pouvez pas prendre cette objet'

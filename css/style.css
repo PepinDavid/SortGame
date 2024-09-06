@@ -2,16 +2,6 @@ canvas {
     border: 1px solid black;
 }
 
-
-/*
-body{
-    position: fixed;
-    overflow-x: scroll;
-    height: 100%;
-    overflow-y: scroll;
-    width: 100%
-}*/
-
 .inventaire {
     border: 2px solid green;
     font-size: 22px;
