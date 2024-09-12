@@ -1,29 +1,31 @@
 <html>
+
 <head>
 	<title></title>
 </head>
+
 <body>
-<div id="fps"></div>
-<div id="id"></div>
+	<div id="fps"></div>
+	<div id="id"></div>
 
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript">
-	$(function(){
-		let t = $('#id');
-		let fps = $('#fps');
-		let i = 0;
-		let time = (new Date()).getTime();
-		let animate = function() {
-			ne = (new Date()).getTime();
-			dif = parseInt(1000/(ne - time));
-			time = ne;
-			fps.text(dif);
-			t.text(i++);
+	<script type="text/javascript">
+		$(function () {
+			let t = $('#id');
+			let fps = $('#fps');
+			let i = 0;
+			let time = (new Date()).getTime();
+			let animate = function () {
+				ne = (new Date()).getTime();
+				dif = parseInt(1000 / (ne - time));
+				time = ne;
+				fps.text(dif);
+				t.text(i++);
+				requestAnimationFrame(animate);
+			}
+
 			requestAnimationFrame(animate);
-		}
-
-		requestAnimationFrame(animate);
-	})
-</script>
+		})
+	</script>
 </body>
+
 </html>

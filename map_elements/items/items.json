@@ -1,0 +1,388 @@
+{
+    "wastes": [
+        {
+            "url": "aerosol.png",
+            "x": 0,
+            "y": 3,
+            "nom": "Aérosol",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "ballon.png",
+            "x": 15,
+            "y": 2,
+            "nom": "Ballon d'eau chaude",
+            "type": "dechetterie",
+            "drop": true
+        },
+        {
+            "url": "barquette.png",
+            "x": 15,
+            "y": 13,
+            "nom": "Barquette en aluminium",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "barquetteViande.png",
+            "x": 18,
+            "y": 10,
+            "nom": "Barquette sale",
+            "type": "ordure",
+            "drop": true
+        },
+        {
+            "url": "bierre.png",
+            "x": 22,
+            "y": 3,
+            "nom": "Bouteille de bierre",
+            "type": "vert",
+            "drop": true
+        },
+        {
+            "url": "branche.png",
+            "x": 30,
+            "y": 1,
+            "nom": "Branche",
+            "type": "compost",
+            "drop": true
+        },
+        {
+            "url": "canette.png",
+            "x": 43,
+            "y": 3,
+            "nom": "Canette",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "champ.png",
+            "x": 38,
+            "y": 12,
+            "nom": "Bouteille de Champagne",
+            "type": "vert",
+            "drop": true
+        },
+        {
+            "url": "confiture.png",
+            "x": 51,
+            "y": 5,
+            "nom": "Pot de confiture",
+            "type": "vert",
+            "drop": true
+        },
+        {
+            "url": "conserve1.png",
+            "x": 60,
+            "y": 13,
+            "nom": "Boite de maïs",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "conserve2.png",
+            "x": 60,
+            "y": 22,
+            "nom": "Boite de haricots",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "cremeFraiche.png",
+            "x": 54,
+            "y": 32,
+            "nom": "Pot de crème fraiche",
+            "type": "ordure",
+            "drop": true
+        },
+        {
+            "url": "emballageYaourt.png",
+            "x": 48,
+            "y": 19,
+            "nom": "Emballage de yaourts",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "four.png",
+            "x": 45,
+            "y": 32,
+            "nom": "Four électrique",
+            "type": "dechetterie",
+            "drop": true
+        },
+        {
+            "url": "fromageBlanc.png",
+            "x": 35,
+            "y": 23,
+            "nom": "Pot de fromage blanc",
+            "type": "ordure",
+            "drop": true
+        },
+        {
+            "url": "fuel.png",
+            "x": 24,
+            "y": 30,
+            "nom": "Bidon de combustible orange",
+            "type": "dechetterie",
+            "drop": true
+        },
+        {
+            "url": "fuel2.png",
+            "x": 24,
+            "y": 37,
+            "nom": "Bidon de combustible vert",
+            "type": "dechetterie",
+            "drop": true
+        },
+        {
+            "url": "gravat.png",
+            "x": 1,
+            "y": 25,
+            "nom": "Gravats",
+            "type": "dechetterie",
+            "drop": true
+        },
+        {
+            "url": "herbe.png",
+            "x": 9,
+            "y": 32,
+            "nom": "Tas d'herbes",
+            "type": "compost",
+            "drop": true
+        },
+        {
+            "url": "journaux.png",
+            "x": 0,
+            "y": 40,
+            "nom": "Des journaux",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "lait.png",
+            "x": 6,
+            "y": 47,
+            "nom": "Brique de lait",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "lessive.png",
+            "x": 16,
+            "y": 48,
+            "nom": "Bidon de lessive",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "lessivePoudre.png",
+            "x": 0,
+            "y": 53,
+            "nom": "Carton de lessive",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "metaux.png",
+            "x": 10,
+            "y": 62,
+            "nom": "Bouts de métaux",
+            "type": "dechetterie",
+            "drop": true
+        },
+        {
+            "url": "miroir.png",
+            "x": 15,
+            "y": 61,
+            "nom": "Mirroir",
+            "type": "dechetterie",
+            "drop": true
+        },
+        {
+            "url": "nettoyantSol.png",
+            "x": 23,
+            "y": 62,
+            "nom": "Bidon de nettoyant",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "nourriture.png",
+            "x": 21,
+            "y": 52,
+            "nom": "De la nourriture",
+            "type": "compost",
+            "drop": true
+        },
+        {
+            "url": "pizza.png",
+            "x": 32,
+            "y": 58,
+            "nom": "Emballage de pizza",
+            "type": "ordure",
+            "drop": true
+        },
+        {
+            "url": "plastiqueAlimentaire.png",
+            "x": 35,
+            "y": 62,
+            "nom": "Emballage d'aliments",
+            "type": "ordure",
+            "drop": true
+        },
+        {
+            "url": "pneu.png",
+            "x": 42,
+            "y": 58,
+            "nom": "Un pneu",
+            "type": "dechetterie",
+            "drop": true
+        },
+        {
+            "url": "poele.png",
+            "x": 45,
+            "y": 60,
+            "nom": "Une poele",
+            "type": "ordure",
+            "drop": true
+        },
+        {
+            "url": "sacBouteilleEau1.png",
+            "x": 35,
+            "y": 47,
+            "nom": "Emballage bouteille d'eau",
+            "type": "ordure",
+            "drop": true
+        },
+        {
+            "url": "sacBouteilleEau2.png",
+            "x": 44,
+            "y": 35,
+            "nom": "Emballage bouteille d'eau",
+            "type": "ordure",
+            "drop": true
+        },
+        {
+            "url": "shampoing.png",
+            "x": 49,
+            "y": 42,
+            "nom": "Shampoing",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "sirop.png",
+            "x": 54,
+            "y": 48,
+            "nom": "Bouteille de sirop",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "soda.png",
+            "x": 58,
+            "y": 37,
+            "nom": "Bouteille de soda",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "vegetal.png",
+            "x": 59,
+            "y": 48,
+            "nom": "herbes et branches coupées",
+            "type": "compost",
+            "drop": true
+        },
+        {
+            "url": "verreOrange.png",
+            "x": 62,
+            "y": 43,
+            "nom": "Bouteille de jus d'orange",
+            "type": "vert",
+            "drop": true
+        },
+        {
+            "url": "verreYaourt.png",
+            "x": 19,
+            "y": 25,
+            "nom": "Pot de yaourt en verre",
+            "type": "vert",
+            "drop": true
+        },
+        {
+            "url": "vinBlanc.png",
+            "x": 62,
+            "y": 61,
+            "nom": "Bouteille de vin",
+            "type": "vert",
+            "drop": true
+        },
+        {
+            "url": "vinRouge.png",
+            "x": 58,
+            "y": 58,
+            "nom": "Bouteille de vin",
+            "type": "vert",
+            "drop": true
+        },
+        {
+            "url": "water.png",
+            "x": 57,
+            "y": 60,
+            "nom": "Bouteille deau",
+            "type": "bleu",
+            "drop": true
+        },
+        {
+            "url": "yaourt.png",
+            "x": 28,
+            "y": 29,
+            "nom": "Pot de yaourt en plastique",
+            "type": "ordure",
+            "drop": true
+        },
+        {
+            "url": "bacbleu.png",
+            "x": 18,
+            "y": 21,
+            "nom": "bleu",
+            "type": "bleu",
+            "drop": false
+        },
+        {
+            "url": "bacvert.png",
+            "x": 21,
+            "y": 21,
+            "nom": "vert",
+            "type": "vert",
+            "drop": false
+        },
+        {
+            "url": "compost.png",
+            "x": 24,
+            "y": 21,
+            "nom": "compost",
+            "type": "compost",
+            "drop": false
+        },
+        {
+            "url": "poub.png",
+            "x": 27,
+            "y": 21,
+            "nom": "ordure",
+            "type": "ordure",
+            "drop": false
+        },
+        {
+            "url": "dechetterie.png",
+            "x": 21,
+            "y": 42,
+            "nom": "dechetterie",
+            "type": "dechetterie",
+            "drop": false
+        }
+    ]
+}

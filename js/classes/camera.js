@@ -1,13 +1,8 @@
-// Possible moves for the camera
-export const MVTAXES = {
-    NONE: "none",
-    HORIZONTAL: "horizontal",
-    VERTICAL: "vertical",
-    BOTH: "both"
-};
+import { MOVEMENT_AXES } from "../tools/constantes";
+import { Rectangle } from "./rectangle";
 
 export class Camera {
-    constructor() {
+    constructor(xView, yView, canvasWidth, canvasHeight, worldWidth, worldHeight) {
         //camera position
         this.xView = xView || 0;
         this.yView = yView || 0;
@@ -19,7 +14,7 @@ export class Camera {
         this.heightView = canvasHeight;
 
         //allow movements on x and y at the same time
-        this.axesMovements = MVTAXES.BOTH;
+        this.axesMovements = MOVEMENT_AXES.BOTH;
 
         //object that can be followed
         this.followed = null;
@@ -39,9 +34,9 @@ export class Camera {
     }
 
     update() {
-        if (this.followed != null) {
+        if (this.followed) {
             //si la camera bouge sur l'axe x(droite/gauche) ou les deux
-            if (this.axesMovements == MVTAXES.HORIZONTAL || this.axesMovements == MVTAXES.BOTH) {
+            if (this.axesMovements == MOVEMENT_AXES.HORIZONTAL || this.axesMovements == MOVEMENT_AXES.BOTH) {
                 //if object coords.x minus left camera position plus max that camera can show is superior at the width of angle of view
                 if (this.followed.totalX - this.xView + this.xDeadZone > this.weightView)
                     this.xView = this.followed.totalX - (this.weightView - this.xDeadZone);
@@ -49,8 +44,8 @@ export class Camera {
                     this.xView = this.followed.totalX - this.xDeadZone;
             }
 
-            //si la camera bouge sur l'axe y(haut/bas) ou les deux
-            if (this.axesMovements == MVTAXES.VERTICAL || this.axesMovements == MVTAXES.BOTH) {
+            //if camera moves on y axis or both
+            if (this.axesMovements == MOVEMENT_AXES.VERTICAL || this.axesMovements == MOVEMENT_AXES.BOTH) {
                 //if object coords.y minus top camera plus max that camera can show is superior at the height of angle of view
                 if (this.followed.totalY - this.yView + this.yDeadZone > this.heightView)
                     this.yView = this.followed.totalY - (this.heightView - this.yDeadZone);
@@ -58,10 +53,10 @@ export class Camera {
                     this.yView = this.followed.totalY - this.yDeadZone;
             }
         }
-        
+
         this.viewportRect.set(this.xView, this.yView);
 
-        //ne pas laisser la camera partir au dela des limites du monde/map
+        //do not allow camera to leave map/world limits
         if (this.viewportRect.dehors(this.worldRect)) {
             if (this.viewportRect.left < this.worldRect.left)
                 this.xView = this.worldRect.left;

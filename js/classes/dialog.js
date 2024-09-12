@@ -1,29 +1,35 @@
-class Dialog {
-    constructor(perso, canvas) {
-        let canvas = canvas;
-        let context = canvas.getContext('2d');
+import { Box } from './box';
 
-        this.box = new Box( 5, (3/4) * canvas.height, canvas.width, (1/5) * canvas.height, true);
-
-        this.dessinerDialog = function(message){
-            this.box.dessinerBox(context);
-    //        this.generateRectangle(this.box);
-            context.font = "18px Helvetica";
-            context.strokeStyle = 'black'
-            context.strokeText(message, this.box.x+20, this.box.y+20, this.box.w-10);
-        }
+export class Dialog {
+    constructor(canvas) {
+        this.context = canvas.getContext('2d');
+        this.box = new Box(5, (3 / 4) * canvas.height, canvas.width, (1 / 5) * canvas.height, true);
     }
 
-    generateRectangle(box) {
+    dessinerDialog(message) {
+        this.box.dessinerBox(this.context);
+
+        this.context.font = "18px Helvetica";
+        this.context.strokeStyle = 'black'
+        this.context.strokeText(message, this.box.x + 20, this.box.y + 20, this.box.w - 10);
+    }
+
+    generateRectangle() {
         const canvas = document.createElement('canvas');
 
-        canvas.height = box.h-4;
-        canvas.width = box.w-4;
+        canvas.height = this.box.h - 4;
+        canvas.width = this.box.w - 4;
 
-        const context = canvas.getContext('2d').fillRect(box.x+2, box.y+2, box.w-4, box.h-4)
+        const context = canvas.getContext('2d').fillRect(
+            this.box.x + 2,
+            this.box.y + 2,
+            this.box.w - 4,
+            this.box.h - 4,
+        );
+
         context.fillStyle = 'grey';
 
         const image = new Image();
         image.src = canvas.toDataURL("image/png");
-   }
+    }
 }

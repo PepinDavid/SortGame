@@ -1,0 +1,32 @@
+{
+    "npcs": [
+        {
+            "url": "femme2.png",
+            "x": 19,
+            "y": 20,
+            "direction": 0,
+            "tirade": "Vous voulez jeter un objet, selectionnez le dans votre inventaire avant et appuyer sur 'Entrée'"
+        },
+        {
+            "url": "homme1.png",
+            "x": 10,
+            "y": 20,
+            "direction": 0,
+            "tirade": "Faîtes attention, certains objets peuvent aller dans plusieurs poubelles"
+        },
+        {
+            "url": "femme1.png",
+            "x": 60,
+            "y": 60,
+            "direction": 0,
+            "tirade": "Que c'est sale par ici, les gens ne sont vraiment pas respectueux"
+        },
+        {
+            "url": "femme3.png",
+            "x": 21,
+            "y": 49,
+            "direction": 0,
+            "tirade": "Bienvenue a la déchetterie"
+        }
+    ]
+}
