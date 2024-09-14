@@ -1,6 +1,7 @@
 {
   "name": "sortgame",
   "version": "1.0.0",
+  "type": "module",
   "description": "little educational game on sort wastes",
   "main": "index.js",
   "scripts": {

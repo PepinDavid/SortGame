@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES5", // Version de JavaScript cible
+    "module": "ESNext", // Module import/export ES6+
+    "jsx": "react", // Support du JSX
+    "moduleResolution": "node", // Recherche des modules dans node_modules
+    "esModuleInterop": true, // Compatibilité avec les modules ES et CommonJS
+    "skipLibCheck": true, // Ignore les erreurs de vérification de type dans les fichiers de définition
+    "forceConsistentCasingInFileNames": true, // Enforce la cohérence de casse
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": [
+    "src/**/*"
+  ], // Inclure tous les fichiers TypeScript dans src
+  "exclude": [
+    "node_modules"
+  ] // Exclure node_modules du processus de transpilation
+}

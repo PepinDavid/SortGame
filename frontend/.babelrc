@@ -1,0 +1,10 @@
+{
+  "presets": [
+    "@babel/preset-env",        // Transpile les nouvelles fonctionnalités JS en ES5
+    "@babel/preset-react",      // Transpile le code JSX en JavaScript
+    "@babel/preset-typescript"  // Gère les fichiers TypeScript (.ts et .tsx)
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime"  // Gère la réutilisation du code Babel pour éviter les duplications dans les bundles
+  ]
+}
